@@ -1,13 +1,16 @@
 body {
-    background-color: lightgrey;
+    background-color: 5DA8F0;
+    border: 10px solid #1964AB;
+    border-radius: 20px;
+    padding-left: 10px
 }
 
 h1 {
     font-family: roboto;
-    color:000000;
-    margin-left: 80px
+    color: 000000;
+    margin-left: 40px
 }
-        
+
 h2 {
     font-family: georgia;
     color:000000;
@@ -20,5 +23,35 @@ h3 {
 h4 {
     font-family: arial;
     color: 000000;
-    margin-left: 90px;
+    margin-left: 50px;
+}
+
+.mainText {
+    border: 2px solid;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: 86BDF0;
+}
+
+.careerButtons {
+    border: none;
+    text-align:center
+}
+
+.side-by-side {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 5px;
+    font-family: georgia;
+    color: 000000;
+    verticle-align: middle;
+}
+
+.career {
+    margin-left: 100px;
+    margin-right: 100px;
+    color:000000;
+    font-family:georgia;
+    text-align: left;
 }
