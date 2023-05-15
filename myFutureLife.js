@@ -20,7 +20,7 @@ let computerScienceButton = document.getElementById("situation-one");
 computerScienceButton.addEventListener("click", firstButton);
 
 function firstButton() {
-    computerScienceBuilding.innerHTML = '<img src="downloads/images/computerScienceBuilding.jpg">'
+    computerScienceBuilding.innerHTML = '<img src="images/computerScienceBuilding.jpg">'
     document.getElementById("computerProgrammer").innerHTML = computerScienceLife;
     document.getElementById("engineer").innerHTML = "";
     revealComputerScience = true;
