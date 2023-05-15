@@ -1,21 +1,39 @@
 <html>
     <head>
-    <link rel="stylesheet" href="myFutureLife.css">
-        <title>My Future Plan</title>
-        <script defer src="myFutureLife.js"></script>
+        <link rel="stylesheet" href="myFutureLife.css">
+            <title>My Future Plan</title>
+            <script defer src="myFutureLife.js" charset="utf-8"></script>
     </head>
     <body>
-    <br>
-    <h1>My Future Plan</h1>
-        <h4>By: Benji Kallen</h4>
-    <br>
-        <p style="text-align:center">Click the buttons to explore the different scenarios!</p>
-    <button id="situation-one" style="color:000000;font-family:georgia;margin-left:615px">Computer Science</button>
-        <div id="computer-programmer">
+        <br>
+            <h1>My Future Plan</h1>
+            <h4>By: Benji Kallen</h4>
+        <div class="mainText"
+        <br>
+            <p style="text-align:center">Click the buttons to explore the different scenarios!</p>
+
+        <div class="careerButtons">
+            <div class="side-by-side">
+                <button id="situation-one">Computer Science</button>
+            </div>
+            <div class="side-by-side">
+                <button id="situation-two">Engineer</button>
+            </div>
         </div>
-    <button id="situation-two" style="color:000000;font-family:georgia;margin-left:640px">Engineer</button>
-        <div id="engineer">
+    <!-- Sets up the buttons for where the different careers will go-->
+
+        <div class="career">
+            <p id="computerProgrammerPicture"></p>
+            <p id="computerProgrammer"></p>
         </div>
-        <a href="myFutureLifeThirty.html" style="font-family:roboto">Click here to age 15 years!</a>
+        <div class="career">
+            <p id="engineer"></p>
+        </div>
+    <!--Executes the buttons and prints the required text-->
+
+        <br>
+        </div>
+        <br>
+        <a href="myFutureLifeThirty.html" style="font-family:roboto;">Click here to age 15 years!</a>
     </body>
 </html>
