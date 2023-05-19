@@ -60,7 +60,7 @@ function firstButton() {
     };
     
     engineerCareerPicture.innerHTML = '';
-    computerProgrammerCareerPicture.innerHTML = '<img src="images/computerScienceBuilding.jpg">';
+    computerProgrammerCareerPicture.innerHTML = '<img src="computerScienceBuilding.jpg">';
     computerProgrammerElement.innerHTML = '';
     revealComputerScience = true;
     revealEngineer = false;
@@ -97,7 +97,7 @@ function secondButton() {
     };
     
     computerProgrammerCareerPicture.innerHTML = '';
-    engineerCareerPicture.innerHTML = '<img src="images/engineerBuilding.jpg">';
+    engineerCareerPicture.innerHTML = '<img src="engineerBuilding.jpg">';
     engineerElement.innerHTML = '';
     revealComputerScience = false;
     revealEngineer = true;
