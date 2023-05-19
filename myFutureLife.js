@@ -1,11 +1,14 @@
 var revealComputerScience = false;
 var revealEngineer = false;
+var revealThirtyYears = true;
 // Sets up the variables for the animation
 
 let computerProgrammerElement = document.getElementById('computerProgrammer');
 let engineerElement = document.getElementById('engineer');
+let thirtyYearsElement = document.getElementById('thirtyYearsText');
 let computerProgrammerCareerPicture = document.getElementById('computer-programmer-picture')
 let engineerCareerPicture = document.getElementById('engineer-picture');
+let apartment = document.getElementById('studioApartment');
 // Sets up the variables to reveal the text
 
 var computerScienceLife = [
@@ -42,10 +45,20 @@ var engineerLife = [
     'I currently live in a small apartment, but I plan on moving north one day in order to buy a small house and start a family.',
     '<br>'
     ];
+
+var thirtyYearsScenarios = [
+    '<h3 style="margin-left:75px"><strong>Computer Programmer</strong></h3>',
+    'I work remotely as a computer programmer for Guerilla Games. My salary is about $145,000 per year. I live with my wife and 15 year old kid in a suburban house just outside of San Francisco. When I\'m not working, I enjoy reading or taking my kid out camping. A huge bonus of San Francisco is the frequent concerts that I often go to. On the side, I\'m also working on an indie game as a passion project. One day I hope to be able to leave my job in order to work full-time on game development though at the moment it is very unfeasible. I upgraded my car quite a few times over the years, and now I drive a Toyota hybrid which cost me about $40,000. It\'s a pretty nice car. Our house cost about $350,000 which we\'re still paying off to this day.',
+    '<br>',
+    '<h3 style="margin-left:75px"><strong>Engineer</strong></h3>',
+    'After a while, I decided to move up north to Oregon. I work as a mechanical engineer for Intel. They pay me about $110,000 per year. Together with my wife and kid, we live in a $200,000 house which we\'re still paying the mortgage for.',
+    '<br>'
+    ];
 // Sets up the global variables for the text
 
-let computerScienceAnimation = false
-let engineerAnimation = false
+let computerScienceAnimation = false;
+let engineerAnimation = false;
+let thirtyYearsAnimation = true;
 // Sets up the global variables for the animation
 
 let computerScienceButton = document.getElementById('situation-one');
@@ -82,6 +95,7 @@ function firstButton() {
         };
         computerSciencePrintLine();
     };
+    apartment.innerHTML = '<img src="pasadenaApartment.png">';
 };
 // Reveals the life as a computer programmer portion
 
@@ -96,6 +110,7 @@ function secondButton() {
         return;
     };
     
+    apartment.innerHTML = ''
     computerProgrammerCareerPicture.innerHTML = '';
     engineerCareerPicture.innerHTML = '<img src="engineerBuilding.jpg">';
     engineerElement.innerHTML = '';
@@ -121,3 +136,22 @@ function secondButton() {
     };
 };
 // Reveals the life as an engineer portion
+
+function startThirtyYearsAnimation() {
+  if (revealThirtyYears === true) {
+    let thirtyYearsLineReveal = 0;
+    function thirtyYearsPrintLine() {
+      thirtyYearsAnimation = true;
+      if (thirtyYearsLineReveal < thirtyYearsScenarios.length) {
+        thirtyYearsElement.innerHTML += thirtyYearsScenarios[thirtyYearsLineReveal];
+        thirtyYearsLineReveal++;
+        setTimeout(thirtyYearsPrintLine, 50);
+      } else {
+        thirtyYearsAnimation = false;
+      };
+    };
+    thirtyYearsPrintLine();
+    };
+};
+window.addEventListener('load', startThirtyYearsAnimation);
+// Reveals the Text for the thirty years page
