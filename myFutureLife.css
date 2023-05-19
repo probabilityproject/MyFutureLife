@@ -58,7 +58,7 @@ h4 {
     font-family: georgia;
     color: #000000;
     verticle-align: middle;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .career {
@@ -84,12 +84,17 @@ h4 {
 
 #computer-programmer-picture {
     verticle-align: middle;
+    width: 100px;
 }
 
 #engineer-picture {
     verticle-align: middle;
+    width: 100px;
+    height: auto;
 }
 
 #studioApartment {
     verticle-align: middle;
+    width: 100px;
+    height: auto;
 }
