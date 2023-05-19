@@ -57,7 +57,7 @@ h4 {
     border-radius: 5px;
     font-family: georgia;
     color: #000000;
-    verticle-align: middle;
+    vertical-align: middle;
     margin-left: 10px;
 }
 
@@ -83,18 +83,18 @@ h4 {
 }
 
 #computer-programmer-picture {
-    verticle-align: middle;
+    vertical-align: middle;
     width: 100px;
 }
 
 #engineer-picture {
-    verticle-align: middle;
+    vertical-align: middle;
     width: 100px;
     height: auto;
 }
 
 #studioApartment {
-    verticle-align: middle;
+    vertical-align: middle;
     width: 100px;
     height: auto;
 }
