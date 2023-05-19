@@ -94,8 +94,8 @@ function firstButton() {
     };
     
     engineerCareerPicture.innerHTML = '';
-    computerProgrammerCareerPicture.innerHTML = '<img src="computerScienceBuilding.jpg">';
-    apartment.innerHTML = '<img src="pasadenaApartment.png">';
+    computerProgrammerCareerPicture.innerHTML = '<img src="computerScienceBuilding.jpg" style="vertical-align:middle;width:100px;height:auto;">';
+    apartment.innerHTML = '<img src="pasadenaApartment.png" style="vertical-align:middle;width:100px;height:auto;">';
     computerProgrammerElement.innerHTML = '';
     revealComputerScience = true;
     revealEngineer = false;
@@ -133,7 +133,7 @@ function secondButton() {
     
     apartment.innerHTML = ''
     computerProgrammerCareerPicture.innerHTML = '';
-    engineerCareerPicture.innerHTML = '<img src="engineerBuilding.jpg">';
+    engineerCareerPicture.innerHTML = '<img src="engineerBuilding.jpg" style="vertical-align:middle;width:100px;height:auto;">';
     engineerElement.innerHTML = '';
     revealComputerScience = false;
     revealEngineer = true;
