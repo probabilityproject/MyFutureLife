@@ -74,6 +74,7 @@ function firstButton() {
     
     engineerCareerPicture.innerHTML = '';
     computerProgrammerCareerPicture.innerHTML = '<img src="computerScienceBuilding.jpg">';
+    apartment.innerHTML = '<img src="pasadenaApartment.png">';
     computerProgrammerElement.innerHTML = '';
     revealComputerScience = true;
     revealEngineer = false;
@@ -95,7 +96,6 @@ function firstButton() {
         };
         computerSciencePrintLine();
     };
-    apartment.innerHTML = '<img src="pasadenaApartment.png">';
 };
 // Reveals the life as a computer programmer portion
 
