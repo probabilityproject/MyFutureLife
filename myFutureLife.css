@@ -76,25 +76,8 @@ h4 {
 }
 
 #thirtyYearsText {
-     color: #000000;
+    color: #000000;
     font-family: calibri;
     margin-left: 100px;
     margin-right: 100px;
-}
-
-#computer-programmer-picture {
-    vertical-align: middle;
-    width: 100px;
-}
-
-#engineer-picture {
-    vertical-align: middle;
-    width: 100px;
-    height: auto;
-}
-
-#studioApartment {
-    vertical-align: middle;
-    width: 100px;
-    height: auto;
 }
